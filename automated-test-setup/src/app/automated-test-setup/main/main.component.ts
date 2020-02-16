@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ɵALLOW_MULTIPLE_PLATFORMS } from '@angular/core';
 
 @Component({
   selector: 'app-main',
