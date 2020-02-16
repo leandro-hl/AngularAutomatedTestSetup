@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.less']
 })
 export class MainComponent implements OnInit {
+  classToTest = '';
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  createTest(){
+    alert(this.classToTest);
+  }
 }

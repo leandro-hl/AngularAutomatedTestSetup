@@ -1,0 +1,9 @@
+<div class="input-container">
+  <form>
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>{{ label }}</mat-label>
+      <textarea *ngIf="!isReadOnly" matInput (change)="bubbleChange($event)" mat-autosize [placeholder]="label"></textarea>
+      <textarea *ngIf="isReadOnly" matInput mat-autosize readonly>{{ text }}</textarea>
+    </mat-form-field>
+  </form>
+</div>

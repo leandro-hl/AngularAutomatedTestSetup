@@ -1,11 +1,10 @@
-<div fxLayout="row" fxLayoutAlign="center center">
-  <button mat-raised-button>Basic</button>
-</div>
-<div fxLayout="row" fxLayoutAlign="center center">
-  <div fxLayout="column">
-    first columns
+<div fxLayout="column" fxFlexFill class="container">
+  <div fxFlexAlign="center">
+    <button mat-raised-button color="primary" (click)="createTest()">CREATE TEST</button>
   </div>
-  <div fxLayout="column">
-    second column
+
+  <div fxLayout="row">
+    <app-input-output fxFlex="50" label="Enter your class code to test" [(text)]="classToTest"></app-input-output>
+    <app-input-output fxFlex="50" label="Your test code" isReadOnly=true></app-input-output>
   </div>
 </div>
